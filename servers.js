@@ -16,7 +16,7 @@ const limiter = rateLimit({
 
 const app = express();
 app.use(express.json())
-app.use(cors(options))
+app.use(cors())
 // Apply the limiter to all requests
 app.use(limiter);
 
